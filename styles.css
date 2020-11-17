@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: azure;
+    background-color: black;
+}
+
+.effect{
+    font-size:calc(20px + 5vw);
+    font-weight:700;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    animation: glow 2s ease-in infinite;
+}
+
+@keyframes glow{
+    10%{
+        text-shadow: 6px -6px 10px #ec0101,6px -6px 10px #ec0101,6px -6px 10px #ec0101,6px -6px 10px #ec0101;
+    }
+    50%{
+        text-shadow: -6px 6px 10px #150485,-6px 6px 10px #150485,-6px 6px 10px #150485,-6px 6px 10px #150485;
+    }
+    75%{
+        text-shadow: 6px 6px 10px #ec0101,6px 6px 10px #ec0101,6px 6px 10px #ec0101,6px 6px 10px #ec0101;
+    }
+    100%{
+        text-shadow: -6px -6px 10px #150485,-6px -6px 10px #150485,-6px -6px 10px #150485,-6px -6px 10px #150485;
+    }
+}
